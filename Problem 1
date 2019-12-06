@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt 
+
+def f(n):
+    if n < 9:
+        return pow(n,2)-7
+    return f(n-10)
+
+x = []
+y = []
+'''range'''
+for i in range(0,100):
+    x.append(i)
+    y.append(f(i))
+    
+plt.stem(x,y)
+plt.show(x,y)
