@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt 
 
 def f(n):
-    if n < 9:
+    if n <= 9:
         return pow(n,2)-7
     return f(n-10)
 
